@@ -1,0 +1,32 @@
+
+   <!-- ANTIGO PROCURA.HTML -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar Operação</title>
+  <link rel="stylesheet" href="procura.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="back-button" onclick="window.history.back()">Voltar</button>
+    <h1>Buscar Operação</h1>
+    <button class="cadastro-button" onclick="window.location.href='cadastro.html'">Cadastro</button>
+  </header>
+  
+  <div class="filter-container">
+    <!-- Busca por operação -->
+    <input type="text" id="searchInput" placeholder="Digite para buscar a Operação..." oninput="buscarOperacao()">
+    <!-- Busca por UF, usada após selecionar uma operação -->
+    <input type="text" id="ufSearchInput" placeholder="Digite para buscar a UF...">
+  </div>
+  
+  <div id="results" class="results-container"></div> <!-- Resultados da busca principal -->
+  <div id="operation-details" class="details-container"></div> <!-- Detalhes da operação selecionada -->
+  <div id="fiscal-details" class="details-container"></div> <!-- Detalhes fiscais da busca por UF -->
+
+  <script src="procura.js"></script>
+</body>
+</html>

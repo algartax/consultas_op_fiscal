@@ -1,0 +1,9 @@
+Vamos criar uma tela html css js . que vai cadastrar uma operaçao fiscal.  Pra começar vamos criar o forumulario.  Tem que ficar MUITOOO moderno , com os campos suaves e com efeitos modernos.  Tem que ter todos esses campos "operacao, Tipo de Operação	CFOP	Tipo de ICMS	Retorno 	CFOP Retorno	Destinatário NF	Tipo de Ordem	Nome da Ordem	Tipo de Material	Categoria NF-e	Tipo Item	Dir.Fisc. ICMS	Tipo ICMS	Dir.Fisc IPI	Tipo IPI	Dir.Fisc PIS	Dir.Fisc COFINS	Mensagem legal	Observação   "   
+Tem que enviar para a tabela do supabase , tabela writer  e a url e api tá ai : 
+https://dutdhdhggnpnmebegkya.supabase.co
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR1dGRoZGhnZ25wbm1lYmVna3lhIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Mjk1Mzc0MjUsImV4cCI6MjA0NTExMzQyNX0.sz_ZM_xHkNZafDXCWNXju9gVdeVvJEFmWPDNzlZgB-w
+No supabase as colunas estao com o mesmo nome 
+Cria com 3 arquivos , cadastro.html, cadastro.css e cadastro.js . 
+Deixa o formulario com 2 colunas e com os campos com uns 10cm de largura 
+Deixa o botao voltar com 3cm 
+Cria uma barra no topo com 2cm azul moderno com o botao voltar nela e com um titulo " Cadastro Operação " 

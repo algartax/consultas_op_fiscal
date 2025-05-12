@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Direitos</title>
+  <link rel="stylesheet" href="tabeladireito.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="back-button" onclick="window.location.href='cadastro.html'">Voltar</button>
+    <h1>Tabela de Direitos</h1>
+  </header>
+
+  <div class="table-container">
+    <div class="table-scroll">
+      <table id="direitosTable">
+        <thead>
+          <tr id="tableHead">
+            <!-- Cabeçalhos dinâmicos serão inseridos aqui -->
+            <th>Ações</th> <!-- Adicionado para o botão de exclusão -->
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <!-- Linhas da tabela serão carregadas dinamicamente -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="tabeladireito.js"></script>
+</body>
+</html>

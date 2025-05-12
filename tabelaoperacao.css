@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333;
+  }
+  
+  .top-bar {
+    width: 100%;
+    height: 2cm;
+    background-color: #496b8f;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    color: #fff;
+  }
+  
+  .top-bar h1 {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  
+  .back-button {
+    background-color: #fff;
+    color: #0056b3;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .table-container {
+    width: calc(100% + 5cm); /* Aumenta a largura da tabela em 5 cm */
+    margin: 20px auto;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  .table-scroll {
+    overflow-x: scroll;
+    margin-top: 10px;
+  }
+  
+  table {
+    width: calc(100% + 5cm); /* Aumenta a largura interna da tabela em 5 cm */
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: left;
+  }
+  
+  thead {
+    background-color: #0056b3;
+    color: #fff;
+  }
+  
+  thead th {
+    padding: 10px;
+  }
+  
+  tbody tr {
+    height: 50px; /* Altura uniforme para todas as linhas */
+    border-bottom: 1px solid #ddd;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+  }
+  
+  tbody td {
+    padding: 10px;
+    text-overflow: ellipsis; /* Para cortar texto que não cabe */
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+  }
+  
+  tbody td:focus {
+    background-color: #e0f7fa;
+    outline: none;
+    white-space: normal; /* Mostra o texto completo ao clicar */
+    overflow: visible;
+  }
+  
+  tbody td[contenteditable="true"] {
+    border: 1px solid transparent;
+    transition: border-color 0.2s;
+  }
+  
+  tbody td[contenteditable="true"]:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 86, 179, 0.3);
+  }
+  
+  /* Botão de exclusão */
+  button.delete-button {
+    background-color: #e53935;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+  }
+  
+  button.delete-button:hover {
+    background-color: #c62828;
+  }
+  
+  /* Ajustes de largura das colunas */
+  thead th[data-column="operacao"] {
+    width: calc(20%); /* Coluna "Tipo Operação" reduzida em 3,5 cm */
+  }
+  
+  thead th[data-column="cfop_retorno"] {
+    width: calc(5% + 0.3cm); /* Ligeiramente mais larga */
+  }
+  
+  thead th {
+    width: auto; /* Todas as demais colunas ajustam a largura para exibir os caracteres */
+  }
+  
+  tbody td[data-column="observacao"] {
+    max-width: 10%; /* Observação permanece truncada */
+  }
+  

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro Operação Fiscal</title>
+  <link rel="stylesheet" href="cadastro.css">
+</head>
+<body>
+  <header class="top-bar">
+    <button class="back-button" onclick="window.location.href='index.html'">Voltar</button>
+    <h1>Cadastro Operação</h1>
+    <button class="tabela-button" onclick="window.location.href='tabelaoperacao.html'">Tabela</button>
+  </header>
+  
+  <div class="form-container">
+    <form id="fiscalForm">
+      <!-- Campos do formulário -->
+      <div class="form-group">
+        <label for="operacao">Operação</label>
+        <input type="text" id="operacao" name="operacao">
+      </div>
+      <div class="form-group">
+        <label for="tipo_operacao">Tipo de Operação</label>
+        <input type="text" id="tipo_operacao" name="Tipo de Operação">
+      </div>
+      <div class="form-group">
+        <label for="cfop">CFOP</label>
+        <input type="text" id="cfop" name="CFOP">
+      </div>
+      <div class="form-group">
+        <label for="tipo_icms">Tipo de ICMS</label>
+        <input type="text" id="tipo_icms" name="Tipo de ICMS">
+      </div>
+      <div class="form-group">
+        <label for="retorno">Retorno</label>
+        <input type="text" id="retorno" name="Retorno">
+      </div>
+      <div class="form-group">
+        <label for="cfop_retorno">CFOP Retorno</label>
+        <input type="text" id="cfop_retorno" name="CFOP Retorno">
+      </div>
+      <div class="form-group">
+        <label for="destinatario_nf">Destinatário NF</label>
+        <input type="text" id="destinatario_nf" name="Destinatário NF">
+      </div>
+      <div class="form-group">
+        <label for="tipo_ordem">Tipo de Ordem</label>
+        <input type="text" id="tipo_ordem" name="Tipo de Ordem">
+      </div>
+      <div class="form-group">
+        <label for="nome_ordem">Nome da Ordem</label>
+        <input type="text" id="nome_ordem" name="Nome da Ordem">
+      </div>
+      <div class="form-group">
+        <label for="tipo_material">Tipo de Material</label>
+        <input type="text" id="tipo_material" name="Tipo de Material">
+      </div>
+      <div class="form-group">
+        <label for="categoria_nf_e">Categoria NF-e</label>
+        <input type="text" id="categoria_nf_e" name="Categoria NF-e">
+      </div>
+      <div class="form-group">
+        <label for="tipo_item">Tipo Item</label>
+        <input type="text" id="tipo_item" name="Tipo Item">
+      </div>
+      <div class="form-group">
+        <label for="dir_fisc_icms">Dir.Fisc. ICMS</label>
+        <input type="text" id="dir_fisc_icms" name="Dir.Fisc. ICMS">
+      </div>
+      <div class="form-group">
+        <label for="tipo_icms_2">Tipo ICMS</label>
+        <input type="text" id="tipo_icms_2" name="Tipo ICMS">
+      </div>
+      <div class="form-group">
+        <label for="dir_fisc_ipi">Dir.Fisc IPI</label>
+        <input type="text" id="dir_fisc_ipi" name="Dir.Fisc IPI">
+      </div>
+      <div class="form-group">
+        <label for="tipo_ipi">Tipo IPI</label>
+        <input type="text" id="tipo_ipi" name="Tipo IPI">
+      </div>
+      <div class="form-group">
+        <label for="dir_fisc_pis">Dir.Fisc PIS</label>
+        <input type="text" id="dir_fisc_pis" name="Dir.Fisc PIS">
+      </div>
+      <div class="form-group">
+        <label for="dir_fisc_cofins">Dir.Fisc COFINS</label>
+        <input type="text" id="dir_fisc_cofins" name="Dir.Fisc COFINS">
+      </div>
+      <div class="form-group">
+        <label for="mensagem_legal">Mensagem legal</label>
+        <input type="text" id="mensagem_legal" name="Mensagem legal">
+      </div>
+      <div class="form-group">
+        <label for="observacao">Observação</label>
+        <textarea id="observacao" name="Observação"></textarea>
+      </div>
+      <button type="button" onclick="enviarDados()">Cadastrar</button>
+    </form>
+  </div>
+  
+  <script src="cadastro.js"></script>
+</body>
+</html>
